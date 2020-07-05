@@ -1,1 +1,0 @@
-The Astrobook rendered files
