@@ -1,0 +1,284 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>How to contribute to The Astrobook &#8212; The Astrobook</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/main.css" />
+    <link rel="stylesheet" type="text/css" href="_static/jupyter-sphinx.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/sphinx-book-theme.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/mystnb.js"></script>
+    <script src="_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/astro_logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">The Astrobook</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="README.html">
+   The Astrobook
+  </a>
+ </li>
+</ul>
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/CONTRIBUTING.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> On this page
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-to-write-book-content">
+   How to write book content
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-to-draw-technical-figures">
+   How to draw technical figures
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-to-package-maintenance">
+   How to package maintenance
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="how-to-contribute-to-the-astrobook">
+<h1>How to contribute to The Astrobook<a class="headerlink" href="#how-to-contribute-to-the-astrobook" title="Permalink to this headline">¶</a></h1>
+<p>Every time you join a new project, you enter in a new world with its own
+culture. Different tools apply together with a variety of rules. Those tools and
+rules are usually related with software utilities such us code formatting,
+version control workflow and many others. This file presents and explains in
+detail all the different good practices under which <strong>The Astrobook</strong>
+development team works. Each one of your future contributions should apply to
+this collection of routines and habits. Notice that some practices might evolve
+as project’s maturity does. Core developers and maintainers are also responsible
+of promoting these good coding practices within the different contributors.</p>
+<div class="section" id="how-to-write-book-content">
+<h2>How to write book content<a class="headerlink" href="#how-to-write-book-content" title="Permalink to this headline">¶</a></h2>
+<p>Content is the core of the book. In this case, we understand by “book content”
+any kind of text or information that will be rendered in the end and presented
+to final reader. This kind of content is usually technical and requires
+knowledge on the topic developer is writing about. All these content is located
+into different files within the <code class="docutils literal notranslate"><span class="pre">astrobook/content/</span></code> directory.</p>
+<p>When writing content, you will check for different sources: articles, papers,
+journals, other books… If some information is retrieved from any of those, it
+is <strong>mandatory</strong> to cite original reference material. This is not only a good
+practice when writing any kind of content but also enables readers to track
+original content sources.</p>
+<p>Each file holding technical content will have a final section in which
+references to original material are listed. Please, append your references
+within this particular section every time a new or updated content is introduced
+within the volume. Finally, all files will not exceed 80 column characters and
+require to be formatted to this particular limit.</p>
+</div>
+<div class="section" id="how-to-draw-technical-figures">
+<h2>How to draw technical figures<a class="headerlink" href="#how-to-draw-technical-figures" title="Permalink to this headline">¶</a></h2>
+<p>Because of both drawing quality and reproducible reasons, software used for
+drawing technical figures has been selected to be
+<a class="reference external" href="https://asymptote.sourceforge.io/">Asymptote</a>. By making use of scripts, it
+provides an easy and light way to generate vector drawings. It supports both 2D
+and 3D graphics and its syntax is quite similar to that one of the C programming
+language.</p>
+<p>When <strong>The Astrobook</strong> is built, Asymptote executes and renders each one of the
+scripts hosted under <code class="docutils literal notranslate"><span class="pre">astrobook/drawings/</span></code> directory. This generates a
+collection of <code class="docutils literal notranslate"><span class="pre">*.png</span></code> files which are then used by source content files.</p>
+<p>It might be tedious or difficult to develop drawing content, but this ensures
+all images to share a common style, no matter original artist or author. Again,
+and due to script nature of the files, coding formatting rules apply. Due to is
+similarity to C, coding style used is the one presented in <a class="reference external" href="https://en.wikipedia.org/wiki/The_C_Programming_Language">The C programming
+language</a> by by Brian
+Kernighan and Dennis Ritchie.</p>
+</div>
+<div class="section" id="how-to-package-maintenance">
+<h2>How to package maintenance<a class="headerlink" href="#how-to-package-maintenance" title="Permalink to this headline">¶</a></h2>
+<p>Some tasks or activities are not related at all with technical content but with
+software used to build and render <strong>The Astrobook</strong>. Main tool in charge of this
+task is <a class="reference external" href="https://jupyterbook.org/intro.html">Jupyter Book</a>, a
+<a class="reference external" href="https://www.python.org/">Python</a> library for building custom books based on
+computational material.</p>
+<p>New versions of both previous software might be released and this project should
+adapt if required to those. New features may be implemented while others can be
+deprecated. Developers working within these kind of tasks are expected to have
+knowledge on Python Packaging and library maintenance.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Jorge M.G.<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="_static/js/index.js"></script>
+    
+  </body>
+</html>
